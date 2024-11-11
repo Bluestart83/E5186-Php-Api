@@ -96,12 +96,16 @@ class HuaweiModemApiClient
 			}
 		}
 
+		if(!$this->verify) { // Disable SSL vertification if needed
+			curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
+			curl_setopt($ch, CURLOPT_SSL_VERIFYHOST, 0);
+		}
+
 		// Include headers in the output
 		curl_setopt($ch, CURLOPT_HEADER, true);
 		curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
 
-
-		// Define a callback function to process headers
+		// Define a callback function to process headers (allow specific Headers to be fetch)
 		curl_setopt(
 			$ch,
 			CURLOPT_HEADERFUNCTION,
