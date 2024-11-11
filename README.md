@@ -22,7 +22,7 @@ Please let me know if you tested it successfully with other modems as well.
    * logout: deletes current session on the HTTP API
 * sms
    * sms_get: get information from boxes: inbox, outbox
-   * send_sms: sends an SMS through device's modem
+   * sms_send: sends an SMS through device's modem
    * sms_delete: deletes an sms from one of their boxes
    * sms_count: get the sms count on each box
    * sms_set_read: set the sms status to read
