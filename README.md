@@ -19,7 +19,7 @@ Please let me know if you tested it successfully with other modems as well.
    * Not Done
 * user
    * login: creates a new session on the HTTP API
-   * logout: deletes current session on the HTTP API
+   * logout: Not Done
 * sms
    * sms_get: get information from boxes: inbox, outbox
    * sms_send: sends an SMS through device's modem
